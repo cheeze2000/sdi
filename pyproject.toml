@@ -1,13 +1,19 @@
 [project]
-name = "sdi"
-version = "0.1.0"
+name = "gladi"
+version = "1.0.0"
 description = "A simple dependency injection library for Python"
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["dependency", "injection", "di"]
 authors = [
     { name = "cheeze2000", email = "me@cheeze2000.net" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = []
+
+[project.urls]
+Repository = "https://github.com/cheeze2000/gladi.git"
 
 [build-system]
 requires = ["uv_build>=0.8.19,<0.9.0"]
@@ -24,6 +30,6 @@ dev = [
 addopts = [
     "-s",
     "-vv",
-    "--cov=sdi",
+    "--cov=gladi",
     "--cov-report=html:coverage",
 ]
