@@ -1,0 +1,29 @@
+[project]
+name = "sdi"
+version = "0.1.0"
+description = "A simple dependency injection library for Python"
+readme = "README.md"
+authors = [
+    { name = "cheeze2000", email = "me@cheeze2000.net" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.8.19,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.13.2",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-s",
+    "-vv",
+    "--cov=sdi",
+    "--cov-report=html:coverage",
+]
